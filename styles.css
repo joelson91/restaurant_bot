@@ -1,0 +1,55 @@
+/* Styling for the body element */
+body {
+    --bg-color: var(--tg-theme-bg-color, #fff);
+    background-color: var(--bg-color);
+    color: var(--tg-theme-text-color, #222);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    visibility: hidden;
+}
+
+/* Center the main title */
+h1 {
+    text-align: center;
+}
+
+/* Styling for menu sections */
+.menu-section {
+    margin: 20px 0;
+}
+
+/* Styling for individual menu items */
+.menu-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--tg-theme-hint-color, #ccc);
+    border-radius: 5px;
+}
+
+/* Styling for quantity control buttons and display */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Styling for the buttons */
+.quantity-controls button {
+    padding: 5px 10px;
+    background-color: var(--tg-theme-button-color, #0088cc);
+    color: var(--tg-theme-button-text-color, #fff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: var(--tg-theme-button-hover-color, #005f99);
+}
+
+/* Styling for the quantity display */
+.quantity-controls span {
+    margin: 0 10px;
+    min-width: 20px;
+    text-align: center;
+}

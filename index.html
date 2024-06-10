@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+
+    <section class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+            <h3>Caesar Salad</h3>
+            <p>Romaine lettuce, croutons, and parmesan.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('caesar_salad', -1)">-</button>
+                <span id="caesar_salad_quantity">0</span>
+                <button onclick="updateQuantity('caesar_salad', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Vegetable Soup</h3>
+            <p>Hot soup with a mix of fresh vegetables.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('vegetable_soup', -1)">-</button>
+                <span id="vegetable_soup_quantity">0</span>
+                <button onclick="updateQuantity('vegetable_soup', 1)">+</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+            <h3>Grilled Chicken</h3>
+            <p>Grilled chicken breast with herbs and spices.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('grilled_chicken', -1)">-</button>
+                <span id="grilled_chicken_quantity">0</span>
+                <button onclick="updateQuantity('grilled_chicken', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Spaghetti Carbonara</h3>
+            <p>Spaghetti with creamy bacon and parmesan sauce.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('spaghetti_carbonara', -1)">-</button>
+                <span id="spaghetti_carbonara_quantity">0</span>
+                <button onclick="updateQuantity('spaghetti_carbonara', 1)">+</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <h3>Tiramisu</h3>
+            <p>Classic Italian dessert with coffee and mascarpone.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('tiramisu', -1)">-</button>
+                <span id="tiramisu_quantity">0</span>
+                <button onclick="updateQuantity('tiramisu', 1)">+</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <h3>Milk Pudding</h3>
+            <p>Creamy pudding with caramel sauce.</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('milk_pudding', -1)">-</button>
+                <span id="milk_pudding_quantity">0</span>
+                <button onclick="updateQuantity('milk_pudding', 1)">+</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importing the Telegram Web App script and the custom script file -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
