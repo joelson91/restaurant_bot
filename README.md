@@ -21,7 +21,7 @@ The project consists of the following files:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/restaurant-menu-telegram-webapp.git
+    git clone https://github.com/joelson91/restaurant_bot.git
     ```
 
 2. **Open `index.html` in a browser:**
